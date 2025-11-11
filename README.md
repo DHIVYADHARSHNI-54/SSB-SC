@@ -53,6 +53,7 @@ Model Waveform
 
 Program
 ```
+
 ac=1.12;
 Am=0.64;
 fc=64;
@@ -60,7 +61,7 @@ fm=16;
 fs=20000;
 t=0:1/fs:2/fm;       
 wc=2*3.14*fc;        
-wm=2*3.14*fm;
+wm=2*3.14*fm;        
 
 e1=(Am*sin(wm*t));
 subplot(4,1,1);
@@ -89,6 +90,7 @@ subplot(4,1,4);
 plot(t,e4);
 title("USB - LSB => isolates one sideband → SSB-SC");
 xgrid;
+
 ```
 
 
